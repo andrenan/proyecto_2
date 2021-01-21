@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PROYECTO WEB</title>
+        <link rel="stylesheet" href=" css.css">
+        
+
+    </head>
+    <body >
+
+        <header>
+            <h1>ADMINISTRACION</h1>
+            <h3>CLIENTE</h3>
+            <nav>
+                <a href = "index.html" class="aa">Inicio</a>
+                <a href = "empresa.html" class="aa">Empresa</a>
+                <a href = "repartidores.html" class="aa">Repartidores</a>
+                <a href = "pedidos.html" class="aa">Pedidos</a>
+                
+                <a href = "reporte_de_ganancia.html" class="aa">Reporte/Ganancias</a>
+            </nav>
+        </header>
+
+
+        <section >
+
+            <img  src="images (2).jpg"> 
+            <br>
+            <img src="images (3).jpg"> 
+            <br>
+            <img src="images (4).jpg"> 
+        </section>
+
+        <section class="coso">
+
+                <form action="" id="form_cliente" method="GET" >
+                <div >
+                <label for="nombre">Nombre: </label><input type="text" id="nombre" size="40">
+                </div>
+                <div>
+                <label for="cedula">Identificacion:</label> <input type="text" id="cedula" size="40">
+                </div>    
+                <div>
+                <label for="correo">Correo:</label> <input type="text" id="correo" size="40"> 
+               
+                </div>
+                <div>
+                <label for="telefono">Telefono:</label> <input type="text" id="telefono" size="40">
+                </div>
+                <p>Metodo de pago:</p>
+                <input type="radio" id="credito" name="pago" value="credito">
+                <label for="credito">Crédito</label><br>
+                <br>
+                <input type="radio" id="debito" name="pago" value="debito">
+                <label for="debito">Debito</label><br>
+                <input type="submit" onclick="return validar_campos()" value="Registrar"><br>
+                <div id="error"></div>
+                <br>
+                <br>
+                </form>
+                
+               
+            
+        </section>
+    <footer>TODOS LOS DERECHOS RESERVADOS</footer>
+
+     <script src="javascript.js"></script>   
+    </body>
+</html>
